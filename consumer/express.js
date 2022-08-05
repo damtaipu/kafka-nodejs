@@ -4,7 +4,7 @@ class KafkaConsumer {
     consumer;
 
     constructor() {
-        this.consumer = this.kafkaCall().consumer({ groupId: 'test-group' });
+        this.consumer = this.kafkaCall().consumer();
         this.runConsumer();
     }
 
